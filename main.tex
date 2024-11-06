@@ -1,0 +1,197 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Benjamin Duong} \\ \vspace{1pt}
+    \small (858) 999-7513 $|$ 
+    \href{mailto:benhduong@gmail.com}{benhduong@gmail.com} $|$ 
+    \href{https://linkedin.com/in/benhduong}{linkedin.com/in/benhduong/} $|$
+    \href{https://github.com/benhduong}{github.com/benhduong}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science}{Expected May 2027}
+    \resumeSubheading
+      {Brown University}{Providence, RI}
+      {Bachelor of Science in Computer Science}{Conferred May 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Courses}: Blockchains \& Cryptocurrencies, Hypertext/Hypermedia, Intro to Robotics, Real-time \& Embedded Software, Data Science, Deep Learning, Machine Learning, Software Security \& Exploitation, User Interface \& User Experience, Fundamentals of Computer Systems, Computer Vision, Intro to Software Engineering, Intro to Algorithms \& Data Structures, Digital Computing Systems, Intro to Programming \& Computer Science}
+        \resumeItem{\textbf{Extracurriculars}: Full Stack at Brown, Hack@Brown (2023, 2024), Brown Chess Club (USATE 2022; Inter-Ivy 2022, 2023) }
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-Stack Intern}{Oct 2023 -- May 2024}
+      {Serre Lab, Brown University}{Providence, RI}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development of ClickMe and RVIS, helping to collect and analyze over 200,000 data points for psychophysics experiments to train and improve AI models.}
+        \resumeItem{Attended weekly remote meetings to brainstorm ideas and provide updates on deliverables.}
+        \resumeItem{Managed version control and collaborated with a team of three using Git and GitHub, ensuring seamless integration and continuous deployment.}
+        \resumeItem{Wrote technical documentation to support ongoing development and new developer onboarding.}
+      \resumeItemListEnd
+
+    %    \resumeSubheading
+    %   {Club Developer}{September 2023 -- December 2023}
+    %   {Full Stack at Brown}{Providence, RI}
+    %   \resumeItemListStart
+    %     \resumeItem{Leveraged Typescript, Next.js, and Firebase to implement a photo gallery and club officer pages for Brown’s Japanese Cultural Association.}
+    % \resumeItemListEnd
+
+     \resumeSubheading
+      {Undergraduate Teaching Assistant}{Jan 2022 -- May 2023}
+      {ENGN 0500 Digital Computing Systems}{Providence, RI}
+      \resumeItemListStart
+        \resumeItem{Held weekly hours to assist a class of fifty students on topics such as digital logic design, assembly, finite state machines, and programming ARM microprocessor boards using C.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ClickMe} $|$ \emph{React (Typescript), Golang, Postgres, Docker}}{Nov 2023 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Developed frontend components such as a countdown clock and dynamic award badge for the leaderboard.}
+            \resumeItem{Increased new user signup by changing the default landing page.}
+            \resumeItem{Selected key synset labels from Imagenet for improved data collection.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Rapid Visual Categorization} $|$ \emph{React, Node, Express, SQLite, Docker}}{Oct 2023 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Implemented secure storage of passwords through encryption with salt and use of Google Recaptcha to verify users and reduce cheating.}
+            \resumeItem{Created a dashboard using React and Chakra UI for easy viewing of data and management of users.}
+            \resumeItem{Dockerized the website to run on Brown’s Google Cloud Linux VM.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Dabble} $|$ \emph{React, Python, MongoDB}}{Feb 2024}
+          \resumeItemListStart
+            \resumeItem{Used GPT and retrieval augmented generation (RAG) techniques to create an AI assistant and help students navigate Courses at Brown.}
+            \resumeItem{Developed a user-friendly frontend interface using React and Chakra UI.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, TypeScript, HTML, CSS, Golang, SQL} \\
+     \textbf{Libraries/Frameworks}{: React, Chakra UI, Next.js, Node.js, Express} \\
+     \textbf{Developer Tools}{: Git, Docker, Firebase} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+
+\end{document}
